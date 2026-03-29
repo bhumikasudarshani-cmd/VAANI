@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-card/70 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-        <div className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
           <div className="relative h-10 w-10 overflow-hidden rounded-xl border border-border bg-white/70 shadow-sm">
             <Image
               src="/vaanilink-logo.png"
@@ -19,7 +19,7 @@ export default function Header() {
             />
           </div>
           <span className="text-lg font-bold tracking-tight text-foreground">VaaniLink</span>
-        </div>
+        </Link>
 
         <nav className="hidden items-center gap-6 text-sm font-medium text-muted-foreground md:flex">
           <Link className="hover:text-foreground transition-colors" href="/">Home</Link>

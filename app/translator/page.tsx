@@ -127,7 +127,7 @@ export default function TranslatorPage() {
             </h2>
             <p className="mt-1 text-xs text-muted-foreground">Real-time translation results will appear here</p>
 
-            <div className="mt-4 flex-1 rounded-xl border border-border bg-white/40 p-4 text-sm text-foreground whitespace-pre-wrap">
+            <div className="mt-4 flex-1 rounded-xl border border-border bg-white/40 p-4 text-sm text-foreground whitespace-pre-wrap min-h-[100px]">
               {output}
             </div>
 
@@ -179,7 +179,7 @@ export default function TranslatorPage() {
                   value={selectedVoiceId}
                   onChange={(e) => setSelectedVoiceId(e.target.value)}
                   disabled={voices.length === 0}
-                  className="w-full rounded-lg border border-border bg-white/40 px-3 py-2 text-sm text-foreground outline-none disabled:opacity-60"
+                  className="w-full rounded-lg border border-border bg-white/40 px-3 py-2 text-[16px] sm:text-sm text-foreground outline-none disabled:opacity-60"
                 >
                   {voices.length === 0 ? (
                     <option value="">Using default voice</option>
@@ -212,7 +212,7 @@ export default function TranslatorPage() {
               </button>
             </div>
 
-            <div className="mt-4 flex-1 overflow-auto rounded-xl border border-border bg-white/40 p-3">
+            <div className="mt-4 flex-1 overflow-auto rounded-xl border border-border bg-white/40 p-3 max-h-[300px] lg:max-h-[600px]">
               {transcript.length === 0 ? (
                 <p className="text-xs text-muted-foreground">No messages yet.</p>
               ) : (
