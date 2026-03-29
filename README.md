@@ -245,25 +245,30 @@ npm start
 
 ## Contributors & Roles
 
+### Skill X Exhibition (Current Team)
+Currently being presented and further developed at **Skill X** by:
+
 - **Sayuj** – Team Leader & Lead Developer  
-  - Led the project end‑to‑end, from concept to implementation.  
-  - Drove architecture, core gesture logic, ElevenLabs and backend integration, and overall coordination.
-
+  - Driving the end-to-end vision, core algorithm architecture, and next-generation translation features.
+  
 - **Ranak** – Core Developer  
-  - Contributed to full-stack implementation, infrastructure, and GitHub setup.  
-  - Helped refine integrations between the front end, MediaPipe, and the backend APIs.
+  - Handling full-stack infrastructure, mobile-responsiveness, API system integrations, and code deployments.
 
-- **Shreyashi** – Gesture & Interaction Design  
-  - Mapped real-world sign shapes to robust detection logic.  
-  - Helped tune thresholds and define practical, daily-use and emergency gestures.
+- **Gaurab** – AI & Gesture Interaction  
+  - Responsible for tuning the MediaPipe detection logic, testing computer vision thresholds, and mapping out robust new sign gestures.
 
-- **Shinjini** – UX Research & Testing  
-  - Ensured gestures are understandable, repeatable, and usable in realistic scenarios.  
-  - Provided feedback on calibration, timings, and overall usability.
+- **Aditya** – UX Research & Accessibility  
+  - Focusing on the overall UI design, cross-device testing, and ensuring the interface is incredibly accessible for users in emergency situations.
 
-- **Bhumika** – Accessibility & Content  
-  - Focused on clear phrases, high-contrast UI, and supporting use cases like medical visits and emergencies.  
-  - Helped refine the transcript flow, emergency phrases, and wording.
+---
+
+### Nah X Assistive Technology Hackathon (Original Creators)
+*VaaniLink was originally ideated and built during the Nah X Hackathon by:*
+- **Sayuj** – Team Leader & Lead Developer
+- **Ranak** – Core Developer
+- **Shreyashi** – Gesture & Interaction Design
+- **Shinjini** – UX Research & Testing
+- **Bhumika** – Accessibility & Content
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
