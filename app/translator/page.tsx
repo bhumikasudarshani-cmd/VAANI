@@ -4,6 +4,8 @@ import { useCallback, useMemo, useState } from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import HandTracker from '../../components/HandTracker';
+import GestureGuide from '../../components/GestureGuide';
+import SOSButton from '../../components/SOSButton';
 import { Camera, Copy, Download, Save, Volume2, Sparkles } from 'lucide-react';
 import { toast } from 'sonner';
 
@@ -131,31 +133,34 @@ export default function TranslatorPage() {
               {output}
             </div>
 
-            <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <div className="mt-4 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
               <button
                 onClick={copy}
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-sm font-semibold text-foreground hover:bg-white/60 transition-colors"
+                className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-sm font-semibold text-foreground hover:bg-white/60 transition-colors"
               >
                 <Copy className="h-4 w-4" /> Copy
               </button>
               <button
                 onClick={speak}
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-sm font-semibold text-foreground hover:bg-white/60 transition-colors"
+                className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-sm font-semibold text-foreground hover:bg-white/60 transition-colors"
               >
                 <Volume2 className="h-4 w-4" /> Speak
               </button>
               <button
                 onClick={download}
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-sm font-semibold text-foreground hover:bg-white/60 transition-colors"
+                className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-sm font-semibold text-foreground hover:bg-white/60 transition-colors"
               >
                 <Download className="h-4 w-4" /> Download
               </button>
               <button
                 onClick={save}
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-sm font-semibold text-foreground hover:bg-white/60 transition-colors"
+                className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-sm font-semibold text-foreground hover:bg-white/60 transition-colors"
               >
                 <Save className="h-4 w-4" /> Save
               </button>
+              <div className="col-span-2 sm:flex-1 flex *:flex-1">
+                <GestureGuide />
+              </div>
             </div>
 
             <div className="mt-4 rounded-xl border border-border bg-card/60 p-3">
@@ -234,6 +239,7 @@ export default function TranslatorPage() {
       </main>
 
       <Footer />
+      <SOSButton />
     </div>
   );
 }
