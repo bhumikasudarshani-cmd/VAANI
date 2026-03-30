@@ -41,6 +41,12 @@ Designed for **daily communication and emergencies**, Vaanilink focuses on clari
 - **Emergency & daily-use phrases**  
   Includes gestures for **help**, **I need assistance**, **I need water**, **I need the restroom**, **please stop**, and more.
 
+- **SOS Emergency Alarm**  
+  A one-tap floating red SOS button inside the Translator that instantly triggers a loud Text-to-Speech (TTS) alarm ("Emergency! I need help immediately!"), flashes the screen red, and activates device haptics to alert bystanders.
+
+- **Diagrammatic Gesture Guide**  
+  A visual popup cheat sheet mapping emoji representations to every supported physical sign gesture (like 🤟 for "Assistance" or 🚻 for "Restroom"). Easily accessible right alongside the translation results.
+
 - **Voice engine with ElevenLabs**  
   - Uses ElevenLabs Text-to-Speech for high-quality audio.  
   - Falls back to the **browser’s own TTS** if ElevenLabs is unavailable or rate-limited.  
@@ -217,7 +223,7 @@ Recognition pipeline:
 - **Translator page** shows three main areas:
   - **Camera Feed** with hand skeleton overlay.  
   - **Translation Results** card with current output and actions:
-    - Copy, Speak (browser TTS), Download, Save.  
+    - Copy, Speak, Download, Save, and a popup **Gesture Guide** visual reference.  
     - Voice selection section.  
   - **Transcript sidebar** with a scrollable history of recent phrases and their timestamps.
 - **Toasts** (via Sonner) surface:
