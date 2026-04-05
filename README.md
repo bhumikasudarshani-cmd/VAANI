@@ -1,8 +1,8 @@
-![Vaanilink logo](./public/vaanilink-logo.png)
 
-## VAANILINK – Sign-to-Speech AI
 
-Vaanilink is a **real-time sign-language to speech** web app.  
+## VAANI – Sign-to-Speech AI
+
+VAANI is a **real-time sign-language to speech** web app.  
 It uses **MediaPipe hand landmarks** to detect gestures, converts them into **natural phrases**, and speaks them using **ElevenLabs** or the browser’s built-in TTS.
 
 Designed for **daily communication and emergencies**, Vaanilink focuses on clarity, speed, and accessibility.
@@ -274,7 +274,7 @@ Currently being presented and further developed at **Skill X** by:
 - **Ranak** – Core Developer
 - **Shreyashi** – Gesture & Interaction Design
 - **Shinjini** – UX Research & Testing
-- **Bhumika** – Accessibility & Content
+- **Bhumika** – Frontend Developer & Core Logic Architect
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
