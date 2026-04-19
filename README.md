@@ -5,7 +5,7 @@
 VAANI is a **real-time sign-language to speech** web app.  
 It uses **MediaPipe hand landmarks** to detect gestures, converts them into **natural phrases**, and speaks them using **ElevenLabs** or the browser’s built-in TTS.
 
-Designed for **daily communication and emergencies**, Vaanilink focuses on clarity, speed, and accessibility.
+Designed for **daily communication and emergencies**, Vaani focuses on clarity, speed, and accessibility.
 
 ---
 
